@@ -1,0 +1,27 @@
+-MPG Regression-
+A multiple linear regression analysis was created in order to determine which car variables greatly influence the miles per gallon on the car. 
+When looking at the summary of the model, it is concluded that vehicle length and ground clearance are statistically unlikely to provide random amounts of variance to the model.
+Therefore, vehicle length and ground clearance have the greatest impact on miles per gallon in this model.
+Since the p-value of our model is 2.27e-11, there is evidence to reject the null hypothesis and therefore conclude that the slope of our model is not zero.
+Even though the argument of overfitting can be presented in this model, due to an r squared value of 0.7, I believe this model can effectively predict the mpg of MechaCar prototypes.
+
+-Suspension Coil Summary-
+The mean coil pounds per square inch is 1500psi when viewing the results in the summary table. 
+There is also a variance of 76 and standard deviation of 9.
+Since the variance does not exceed 100psi, the current manufacturing data meets design specifications.
+
+-Suspension Coil t-test-
+When performing a one sample t-test on a sample of 100 cars to determine the statistical difference between means, a p value of 0.48 was obtained.
+Therefore, it is determined that the two PSI means are statistically similar.
+
+-Designed Study-
+In my statistical study I would like to compare the mpg between MechaCar and its main competitor which we will call Competitor A.
+As a consumer I am interested in having the most efficient mileage per gallon of fuel in order to spend less money on fuel.
+The question behind this study asks, Does MechaCar have more fuel efficient vehicles compared to Competitor A? 
+The null hypothesis will state that there is no statistical difference between the mpg mean of MechaCar vehicles versus Competitor A vehicles.
+The alternative hypothesis states that there is a statistical difference between the mgp mean of MechaCar vehicles versus Competitor A vehicles.
+Since this study consists of 2 different samples, fuel efficiency data from MechaCar and Competitor A, a two sample t-test should be performed to test this hypothesis.
+After obtaining fuel efficiency data for MechaCar and Competitor A vehicles, and completing this statistical test, the consumer will be able to conclude if the mean mpg is statistically different between the two companies.
+
+
+
