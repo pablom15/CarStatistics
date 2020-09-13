@@ -1,3 +1,6 @@
+library(tidyverse)
+library(dplyr)
+
 # Import mecha car data
 Mecha_Car <- read.csv('MechaCar_mpg.csv',stringsAsFactors = F) #read in dataset
 head(Mecha_Car)
@@ -31,11 +34,16 @@ View(Coil_summary)
 
 ggplot(Coil,aes(x=PSI)) + geom_density() #visualize distribution using density plot
 
+
+# Test normality
 shapiro.test(Coil$PSI)
 
+# Take a sample to perform t-test
 coilSample <- Coil %>% sample_n(100)
+ggplot(coilSample,aes(x=PSI)) + geom_density()
 mean(coilSample$PSI)
 
+# Perform t-test
 t.test(coilSample$PSI, mu=1500, alternative = 'two.sided')
 
 
